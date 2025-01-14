@@ -1,1 +1,23 @@
+
+# Configuration de la base de données MySQL
+spring.datasource.url=jdbc:mysql://localhost:8889/devoires
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=root
+
+# JPA et Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# Eureka
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+# Gestion des points de terminaison de santé (Health check)
+management.endpoints.web.exposure.include=health
+management.endpoint.health.show-details=always
+
+
+
+
 mes-config-ms.commandes-last: 10
